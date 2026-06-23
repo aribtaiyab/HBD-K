@@ -28,7 +28,7 @@ const SecretEnding = ({ onReplay }) => {
   }, []);
 
   // Typewriter animation
-  const typewriterMessage = `Agar app ye dekh rahi hai, to matlab apne ye poori journey dekh li ✨\n\nAur agar apko lag raha ho ki maine bas koi template lekar usme images aur notes add kar diye hain, to aisa nahi hai 😊\n\nYe poora scrapbook maine khud design aur thousands line of code karke banaya hai. Jo kuch maine pichhle ek saal me seekha, usi se ye chhota sa surprise banane ki koshish ki.\n\nApp bolti thi na, "Tumhe kya aata hai?" 😄\n\nBas, yahi aata hai... websites banana. Aur socha ki is baar apke liye kuch thoda alag aur yaadgar banaya jaye 🌸\n\nI hope this little surprise made you smile, even if just for a moment.\n\nHappy Birthday once again ✨🎂`;
+  const typewriterMessage = `Agar app ye dekh rahi hai, to matlab apne ye poori journey dekh li ✨\n\nAur agar apko lag raha ho ki maine bas koi template lekar usme images aur notes add kar diye hain, to aisa nahi hai 😊\n\nYe poora website  maine khud design aur thousands line of code karke banaya hai. Jo kuch maine pichhle ek saal me seekha, usi se ye chhota sa surprise banane ki koshish ki.\n\nApp bolti thi na, "Tumhe kya aata hai?" 😄\n\nBas, yahi aata hai... websites banana. Aur socha ki is baar apke liye kuch thoda alag aur yaadgar banaya jaye 🌸\n\nI hope this little surprise made you smile, even if just for a moment.\n\nHappy Birthday once again ✨🎂`;
 
   const butterflies = [
     { id: 0, delay: 0.5, x: 10, duration: 15 },

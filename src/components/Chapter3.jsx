@@ -136,9 +136,10 @@ export default function Chapter3({ onNext }) {
             initial={{ y: 30, opacity: 0 }}
             animate={isOpen ? { y: -190, opacity: 1 } : { y: 30, opacity: 0 }}
             transition={{ duration: 1.1, delay: 0.35, ease: "easeOut" }}
-            className="absolute left-6 right-6 top-16 h-[56%] rounded-[1.8rem] border border-rose-100/50 bg-[#fff4e3] shadow-[0_20px_40px_-24px_rgba(0,0,0,0.3)]"
+            style={{ zIndex: isOpen ? 20 : 1 }}
+            className="absolute left-6 right-6 top-20 h-[52%] rounded-[1.8rem] border border-rose-100/50 bg-[#fff4e3] shadow-[0_20px_40px_-24px_rgba(0,0,0,0.3)]"
           >
-            <div className="h-full rounded-[1.8rem] bg-[#fff5e6] p-5">
+            <div className="h-full rounded-[1.8rem] bg-[#fff5e6] p-6">
               <div className="mb-4 h-3 w-24 rounded-full bg-rose-100/70" />
               <div className="space-y-2">
                 <div className="h-2 w-full rounded-full bg-rose-100/60" />
@@ -147,7 +148,13 @@ export default function Chapter3({ onNext }) {
                 <div className="h-2 w-4/5 rounded-full bg-[#F0D7C8]" />
               </div>
               <p
-                className={`mt-6 text-sm font-body leading-7 text-[#5A4A42]/90 ${isOpen ? "chapter3-typewriter" : ""}`}
+                className={`mt-8 text-base font-body leading-7 text-[#4A3B33] ${isOpen ? "chapter3-typewriter" : ""}`}
+                style={{
+                  textShadow:
+                    "0 1px 0 rgba(255,255,255,0.7), 0 2px 6px rgba(0,0,0,0.08)",
+                  position: "relative",
+                  zIndex: 22,
+                }}
               >
                 Dear you, this little surprise is your cozy moment of joy.
               </p>
