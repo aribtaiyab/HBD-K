@@ -8,6 +8,7 @@ import Chapter4 from "./components/Chapter4";
 import Chapter5 from "./components/Chapter5";
 import Chapter5b from "./components/Chapter5b";
 import Chapter6 from "./components/Chapter6";
+import Chapter7 from "./components/Chapter7";
 import FinalChapter from "./components/FinalChapter";
 import SecretEnding from "./components/SecretEnding";
 import MusicWidget from "./components/MusicWidget";
@@ -58,9 +59,12 @@ function App() {
             <Chapter6 key="chapter6" onNext={handleNext} />
           )}
           {currentChapter === 7 && (
-            <FinalChapter key="final" onReplay={handleReplay} />
+            <Chapter7 key="chapter7" onNext={handleNext} />
           )}
           {currentChapter === 8 && (
+            <FinalChapter key="final" onReplay={handleReplay} />
+          )}
+          {currentChapter === 9 && (
             <SecretEnding key="secret" onReplay={handleRestartJourney} />
           )}
         </AnimatePresence>
