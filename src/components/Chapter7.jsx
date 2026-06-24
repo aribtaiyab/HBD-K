@@ -122,7 +122,7 @@ const questions = [
         tone: "bg-baby-pink text-[#8B5E71]",
       },
       {
-        label: "🌸 Nahi, ab thoda kam karunga",
+        label: "🌸 Nahi, ab thoda kam karungi",
         reaction: "Noted 😆",
         tone: "bg-lavender text-[#77538F]",
       },
@@ -221,8 +221,7 @@ export default function Chapter7({ onNext }) {
             🎀 Just For Fun
           </h1>
           <p className="font-handwriting text-sm text-[#7A5A65] leading-6 whitespace-pre-line">
-            "Aiye kuch mazee ke liye questions karte hai... orr ye answers
-            merako pata bhi nhi chalega 😆✨"
+            "Aiye kuch mazee ke liye questions karte hai..😆✨"
           </p>
         </div>
 

@@ -21,7 +21,7 @@ function App() {
   };
 
   const handleReplay = () => {
-    setCurrentChapter(8); // Go to Secret Ending
+    setCurrentChapter(9); // Go to Secret Ending
   };
 
   const handleRestartJourney = () => {
