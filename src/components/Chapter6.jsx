@@ -10,7 +10,7 @@ import imgk5 from "./imgk5.jpeg";
 export default function Chapter6({ onNext }) {
   const [showCaption, setShowCaption] = useState(false);
   const captionText =
-    "[MEMORY]\n memory????? voto hai hi nhi hammne kabhi baat hi nhi ki koina ajj apka birthday cake cut kariaa inashallah apke saare dua qabool ho aur mera liya bhi dua karia mai bhi kuch karu zindagi mein 😭😭😭 ... \n i hope apko ye acha laga ho ,  keep smiling ."
+    "[MEMORY]\n memory????? voto hai hi nhi hammne kabhi baat hi nhi ki kya pata kyu nhi hoti baat koina ajj apka birthday cake cut kariaa inashallah apke saare dua qabool ho aur mera liya bhi dua karia mai bhi kuch karu zindagi mein 😭😭😭 ... \n i hope apko ye acha laga ho ,syad se apko ye normal lag raha hoga magar  isske picha maine  code likha hai tab jake ye proper website bana hai,  keep smiling ,ghumia phiria mazeeeee kariaaaa.";
 
   useEffect(() => {
     const timer = setTimeout(() => {

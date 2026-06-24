@@ -6,9 +6,11 @@ import Chapter2 from "./components/Chapter2";
 import Chapter3 from "./components/Chapter3";
 import Chapter4 from "./components/Chapter4";
 import Chapter5 from "./components/Chapter5";
+import Chapter5b from "./components/Chapter5b";
 import Chapter6 from "./components/Chapter6";
 import FinalChapter from "./components/FinalChapter";
 import SecretEnding from "./components/SecretEnding";
+import MusicWidget from "./components/MusicWidget";
 
 function App() {
   const [currentChapter, setCurrentChapter] = useState(-1); // -1 is loading
@@ -18,7 +20,7 @@ function App() {
   };
 
   const handleReplay = () => {
-    setCurrentChapter(7); // Go to Secret Ending
+    setCurrentChapter(8); // Go to Secret Ending
   };
 
   const handleRestartJourney = () => {
@@ -29,6 +31,7 @@ function App() {
     <div className="w-full h-[100dvh] bg-cream-white flex justify-center overflow-hidden">
       {/* Mobile container constraint to ensure the "premium app" feel on desktop too */}
       <div className="w-full max-w-md h-full relative shadow-2xl bg-white overflow-hidden">
+        <MusicWidget />
         <AnimatePresence mode="wait">
           {currentChapter === -1 && (
             <LoadingScreen key="loading" onComplete={handleNext} />
@@ -49,12 +52,15 @@ function App() {
             <Chapter5 key="chapter5" onNext={handleNext} />
           )}
           {currentChapter === 5 && (
-            <Chapter6 key="chapter6" onNext={handleNext} />
+            <Chapter5b key="chapter5b" onNext={handleNext} />
           )}
           {currentChapter === 6 && (
-            <FinalChapter key="final" onReplay={handleReplay} />
+            <Chapter6 key="chapter6" onNext={handleNext} />
           )}
           {currentChapter === 7 && (
+            <FinalChapter key="final" onReplay={handleReplay} />
+          )}
+          {currentChapter === 8 && (
             <SecretEnding key="secret" onReplay={handleRestartJourney} />
           )}
         </AnimatePresence>
