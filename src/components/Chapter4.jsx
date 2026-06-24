@@ -9,7 +9,7 @@ export default function Chapter4({ onNext }) {
   const [text, setText] = useState("");
   const PHOTO_URL = imgk1;
   const fullText =
-    "[Whishing You A Happy Birthday Kulsum]\n Enojoy ur day  ,do whatever u want , orr Inshallah u get everthing u pray for . mazeee karia orrr kya hi bolu , orr ha msg ignore karti thik thik koina , at the enjoy karia jo maan vo karia ,Be happy  🌸💖";
+    "[Whishing You A Happy Birthday Kulsum]\n Enojoy ur day  ,do whatever u want , orr Inshallah u get everthing u pray for . mazeee karia orrr kya hi bolu , orr ha msg ignore karti thik thik koina , at the end enjoy karia jo maan vo karia ,khush rahe aur hamesha haste rahe  🌸💖";
 
   useEffect(() => {
     let i = 0;

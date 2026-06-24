@@ -169,7 +169,7 @@ export default function FinalChapter({ onReplay }) {
              🌸
           </p>
           <p className="font-heading text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#FFD665] via-[#F472B6] to-[#8B5CF6] drop-shadow-[0_0_16px_rgba(255,255,255,0.35)]">
-            Onces Again Happy Birthday ✨
+            Once Again Happy Birthday ✨
           </p>
         </motion.div>
 
