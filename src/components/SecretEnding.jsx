@@ -28,7 +28,14 @@ const SecretEnding = ({ onReplay }) => {
   }, []);
 
   // Typewriter animation
-  const typewriterMessage = `Agar app ye dekh rahi hai, to matlab apne ye poori journey dekh li \n\nAur agar apko lag raha ho ki maine bas koi template lekar usme images aur notes add kar diye hain, to aisa nahi hai \n\n\ Ye poora maine khud banaya hai Har page, har photo, har animation aur har chhoti detail ko maine soch samajh kar banaya, taaki ye sirf ek website nahi, balki apki birthday ki ek chhoti si memory ban sake .\n\nApp bolti thi na, Tumhe kya aata hai? \n\nBas, yahi aata hai... websites banana. Aur socha ki is baar apke liye kuch thoda alag aur yaadgar banaya jaye \n\nI hope this little surprise made you smile, even if just for a moment.\n\nHappy Birthday once again ✨🎂`;
+  const typewriterMessage = `Agar app ye dekh rahi hai, to matlab apne ye poori journey dekh li \n\nAur agar apko lag raha ho ki maine bas koi template lekar usme images aur notes add kar diye hain, to aisa nahi hai \n\n\ Ye poora maine khud banaya hai Har page, har photo, har animation aur har chhoti detail ko maine soch samajh kar banaya, taaki ye sirf ek website nahi, balki apki birthday ki ek chhoti si memory ban sake .\n\nApp bolti thi na, Tumhe kya aata hai? \n\nBas, yahi aata hai... websites banana. Aur socha ki is baar apke liye kuch thoda alag aur yaadgar banaya jaye \n\nI hope this little surprise made you smile, even if just for a moment.\n\nAnd if you're wondering why I made this website for you...
+Honestly, I just wanted to make you happy and give you something a little different on your birthday. 🎀✨
+
+This is the best way I know how to do that.
+
+So I thought, instead of sending just a message, why not make something you can actually go through and smile at for a few minutes. 🌷
+
+If this made you smile even once, then all the effort was worth it. 💖\n\nHappy Birthday once again ✨🎂`;
 
   const butterflies = [
     { id: 0, delay: 0.5, x: 10, duration: 15 },
