@@ -82,13 +82,19 @@ export default function Chapter6({ onNext }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: showCaption ? 1 : 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
+          className="mt-0 mb-6"
         >
-          <PremiumButton
-            onClick={onNext}
-            icon={<ArrowRight className="w-5 h-5" />}
-          >
-            Next Page
-          </PremiumButton>
+          <div className="flex w-full justify-center">
+            <div className="-mb-6">
+              {/* pull the button up from bottom */}
+              <PremiumButton
+                onClick={onNext}
+                icon={<ArrowRight className="w-5 h-5" />}
+              >
+                Next Page
+              </PremiumButton>
+            </div>
+          </div>
         </motion.div>
       </div>
     </motion.div>
