@@ -25,7 +25,7 @@ export default function Chapter6({ onNext }) {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0, scale: 0.9, transition: { duration: 0.8 } }}
       transition={{ duration: 0.8 }}
-      className="relative w-full h-screen min-h-[100dvh] bg-[#FAF8F5] p-6 flex flex-col items-center justify-start overflow-y-auto"
+      className="relative w-full h-screen min-h-[100dvh] bg-[#FAF8F5] p-6 pb-[120px] flex flex-col items-center justify-start overflow-y-auto"
     >
       <ParticleEffects count={25} />
 
@@ -82,11 +82,10 @@ export default function Chapter6({ onNext }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: showCaption ? 1 : 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="mt-0 mb-6"
+          className="mt-10 mb-0"
         >
           <div className="flex w-full justify-center">
-            <div className="-mb-6">
-              {/* pull the button up from bottom */}
+            <div className="mt-8">
               <PremiumButton
                 onClick={onNext}
                 icon={<ArrowRight className="w-5 h-5" />}
