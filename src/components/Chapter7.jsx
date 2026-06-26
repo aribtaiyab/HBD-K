@@ -39,22 +39,27 @@ const questions = [
     ],
   },
   {
-    title: "🎵 What makes a day better?",
+    title: "Which part made you smile the most 💖?",
     options: [
       {
-        label: "🎶 Music",
-        reaction: "Taste ✨",
+        label: "📸 The Photos",
+        reaction: "Memories never get old 🥹📸",
         tone: "bg-baby-pink text-[#8F5A72]",
       },
       {
-        label: "🍕 Food",
-        reaction: "Always 😆",
+        label: "💌 The Notes",
+        reaction: "Aww... that means a lot 🌷💖"",
         tone: "bg-cream-white text-[#7A5C52]",
       },
       {
-        label: "🌸 Good company",
-        reaction: "True 🌷",
+        label: "🌷The Questions",
+        reaction: "Hehe, mission accomplished 😆✨",
         tone: "bg-lavender text-[#734C8E]",
+      },
+       {
+        label: "🌸 Everything",
+        reaction: "That just made my day 😭🌸✨",
+        tone: "bg-baby-pink text-[#8F5A72]",
       },
     ],
   },
@@ -79,21 +84,26 @@ const questions = [
     ],
   },
   {
-    title: "Which one is ur favorite app?",
+    title: "Which chapter would you visit again? 💖?",
     options: [
       {
-        label: "🎵 Spotify",
-        reaction: "good choice 🎶",
+        label: "🧸 Childhood",
+        reaction: "Those tiny memories are priceless 🧸✨",
         tone: "bg-cream-white text-[#7B5A4F]",
       },
       {
-        label: "📸 Pinterest",
-        reaction: "Aesthetic queen 🌷",
+        label: "📷 Memories",
+        reaction: "Some moments deserve a replay 📸🌷",
         tone: "bg-lavender text-[#7A4E91]",
       },
       {
-        label: "📷 Instagram",
-        reaction: "sameeeee",
+        label: "💌 One Last Thing",
+        reaction: "Aww... save the best for last 🥹🎀",
+        tone: "bg-baby-pink text-[#9B667A]",
+      },
+       {
+        label: "whole website🌸",
+        reaction: "That just made my day 😭🌸✨",
         tone: "bg-baby-pink text-[#9B667A]",
       },
     ],
@@ -114,7 +124,7 @@ const questions = [
     ],
   },
   {
-    title: "🎁 One last question...\nAgge bhi ignore karia ga? 😂",
+    title: "🎁 One last question...\nAgge bhi ignore karia ga? 🥹🥹",
     options: [
       {
         label: "😌 Haan, adat hai",
