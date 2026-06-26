@@ -48,7 +48,7 @@ const questions = [
       },
       {
         label: "💌 The Notes",
-        reaction: "Aww... that means a lot 🌷💖"",
+        reaction: "Aww... that means a lot 🌷💖",
         tone: "bg-cream-white text-[#7A5C52]",
       },
       {
