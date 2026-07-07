@@ -53,6 +53,8 @@ export default function Chapter6({ onNext }) {
           tapeOffset="top"
           delay={0.5}
           className="w-full max-w-[300px]"
+          imageFrameClassName="rounded-[1.1rem] border-white/70 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.4),inset_0_6px_16px_rgba(255,255,255,0.28),0_8px_16px_-12px_rgba(0,0,0,0.16)]"
+          imageClassName="scale-[1.02]"
         />
 
         <Polaroid
@@ -65,6 +67,8 @@ export default function Chapter6({ onNext }) {
           imagePosition="center"
           imageAspectRatio="aspect-[3/4]"
           className="w-full max-w-[260px]"
+          imageFrameClassName="rounded-[1.1rem] border-white/70 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.4),inset_0_6px_16px_rgba(255,255,255,0.28),0_8px_16px_-12px_rgba(0,0,0,0.16)]"
+          imageClassName="scale-[1.02]"
         />
 
         <motion.div

@@ -11,6 +11,8 @@ export default function Polaroid({
   imageFit = "cover",
   imagePosition = "center",
   imageAspectRatio = "aspect-[4/3]",
+  imageFrameClassName,
+  imageClassName,
 }) {
   const leftTapeClass =
     tapeOffset === "left"
@@ -30,7 +32,7 @@ export default function Polaroid({
       animate={{ opacity: 1, scale: 1, rotate: rotation }}
       transition={{ duration: 0.8, delay, ease: "easeOut" }}
       className={cn(
-        "relative bg-[#fff7f0] p-4 pb-16 shadow-soft rounded-[1.75rem] max-w-sm mx-auto overflow-hidden",
+        "relative bg-[#fff7f0] p-3 pb-16 shadow-[0_20px_45px_-24px_rgba(126,84,73,0.45)] rounded-[1.8rem] max-w-sm mx-auto overflow-hidden border border-[#f6e4db]",
         className,
       )}
     >
@@ -44,13 +46,19 @@ export default function Polaroid({
       />
 
       <div
-        className={`relative ${imageAspectRatio} w-full overflow-hidden rounded-[1.6rem] border border-white/70 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.45)] bg-[#fdf3eb]`}
+        className={cn(
+          `relative ${imageAspectRatio} w-full overflow-hidden rounded-[1.15rem] border border-white/70 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.45),inset_0_6px_18px_rgba(255,255,255,0.35),0_8px_16px_-12px_rgba(0,0,0,0.16)] bg-[#fdf3eb]`,
+          imageFrameClassName,
+        )}
       >
         {imageSrc ? (
           <img
             src={imageSrc}
             alt="Memory"
-            className={`w-full h-full transition duration-1000 ease-out ${imageFit === "contain" ? "object-contain" : "object-cover"} ${imagePosition === "top" ? "object-top" : imagePosition === "bottom" ? "object-bottom" : "object-center"}`}
+            className={cn(
+              `w-full h-full transition duration-1000 ease-out ${imageFit === "contain" ? "object-contain" : "object-cover"} ${imagePosition === "top" ? "object-top" : imagePosition === "bottom" ? "object-bottom" : "object-center"} scale-[1.02] rounded-[1.1rem]`,
+              imageClassName,
+            )}
           />
         ) : (
           <div className="absolute inset-0 bg-[#f9f1e8]" />

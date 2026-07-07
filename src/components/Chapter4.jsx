@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 import Polaroid from "./Polaroid";
 import PremiumButton from "./PremiumButton";
 import { ArrowRight } from "lucide-react";
-import imgk1 from "./imgk1.jpeg";
+import imgk7 from "./imgk7.jpeg";
 
 export default function Chapter4({ onNext }) {
   const [text, setText] = useState("");
-  const PHOTO_URL = imgk1;
+  const PHOTO_URL = imgk7;
   const fullText =
     "[Whishing You A Happy Birthday Kulsum]\n Enojoy ur day  ,do whatever u want , orr Inshallah u get everthing u pray for . mazeee karia orrr kya hi bolu , Aur haan msg ignore karti thik thik koina , at the end enjoy karia jo maan vo karia ,khush rahe aur hamesha haste rahia  🌸💖";
 
@@ -31,7 +31,7 @@ export default function Chapter4({ onNext }) {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -100, transition: { duration: 0.8 } }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="relative w-full h-full min-h-[100dvh] bg-[#FAF8F5] p-6 flex flex-col items-center justify-center overflow-hidden"
+      className="relative w-full h-full min-h-[100dvh] bg-[#FAF8F5] px-6 pt-[calc(1.2rem+env(safe-area-inset-top))] pb-24 flex flex-col items-center justify-start overflow-y-auto overflow-x-hidden scroll-smooth"
     >
       {/* Scrapbook Paper Texture Overlay */}
       <div
@@ -59,14 +59,18 @@ export default function Chapter4({ onNext }) {
         ✨
       </motion.div>
 
-      <div className="relative z-10 w-full max-w-sm flex flex-col gap-8">
+      <div className="relative z-10 w-full max-w-sm flex flex-col gap-8 pt-2 pb-4">
         <Polaroid
           imageSrc={PHOTO_URL}
           caption="Today's Vibe ✨"
           rotation={-3}
           tapeOffset="left"
           delay={0.2}
-          className="w-3/4 self-end" // Organic layout, slightly off-center
+          imageFit="contain"
+          imageAspectRatio="aspect-[3/4]"
+          className="w-[84%] self-end !p-2 !pb-10"
+          imageFrameClassName="rounded-[1.1rem] border-white/70 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.4),inset_0_6px_16px_rgba(255,255,255,0.28),0_8px_16px_-12px_rgba(0,0,0,0.16)]"
+          imageClassName="scale-[1.02]"
         />
 
         <motion.div
@@ -88,6 +92,15 @@ export default function Chapter4({ onNext }) {
             Next Page
           </PremiumButton>
         </motion.div>
+      </div>
+
+      <div className="pointer-events-none absolute inset-x-0 bottom-3 flex justify-center">
+        <div className="flex flex-col items-center text-[#a86f76] text-[11px] tracking-[0.22em] uppercase">
+          <span className="mb-1">Scroll down</span>
+          <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-pink-200 bg-white/90 shadow-sm animate-bounce">
+            <span className="text-pink-400">↓</span>
+          </span>
+        </div>
       </div>
     </motion.div>
   );

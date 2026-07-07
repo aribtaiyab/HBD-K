@@ -15,6 +15,7 @@ import MusicWidget from "./components/MusicWidget";
 
 function App() {
   const [currentChapter, setCurrentChapter] = useState(-1); // -1 is loading
+  const isChapter4 = currentChapter === 3;
 
   const handleNext = () => {
     setCurrentChapter((prev) => prev + 1);
@@ -29,9 +30,13 @@ function App() {
   };
 
   return (
-    <div className="w-full h-[100dvh] bg-cream-white flex justify-center overflow-hidden">
+    <div
+      className={`w-full h-[100dvh] bg-cream-white flex justify-center ${isChapter4 ? "overflow-visible" : "overflow-hidden"}`}
+    >
       {/* Mobile container constraint to ensure the "premium app" feel on desktop too */}
-      <div className="w-full max-w-md h-full relative shadow-2xl bg-white overflow-hidden">
+      <div
+        className={`w-full max-w-md h-full relative shadow-2xl bg-white ${isChapter4 ? "overflow-visible" : "overflow-hidden"}`}
+      >
         <MusicWidget />
         <AnimatePresence mode="wait">
           {currentChapter === -1 && (

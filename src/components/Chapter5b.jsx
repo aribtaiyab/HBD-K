@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import PremiumButton from "./PremiumButton";
 import ParticleEffects from "./ParticleEffects";
-import imgk6 from "./imgk6.jpeg";
+import imgk9 from "./imgk9.jpeg";
 
 export default function Chapter5b({ onNext }) {
   const [noteText, setNoteText] = useState("");
@@ -75,15 +75,14 @@ export default function Chapter5b({ onNext }) {
             <div className="absolute bottom-6 right-8 w-10 h-10 bg-white rounded-full border border-rose-200 shadow-sm flex items-center justify-center text-[#d9889f] text-xl">
               ✨
             </div>
-            <div className="absolute top-6 right-6 w-8 h-8 rounded-full bg-[#f4d8e7] border border-rose-200 shadow-soft flex items-center justify-center text-[#c56f87] text-sm">
-            </div>
+            <div className="absolute top-6 right-6 w-8 h-8 rounded-full bg-[#f4d8e7] border border-rose-200 shadow-soft flex items-center justify-center text-[#c56f87] text-sm"></div>
 
             <div className="relative overflow-hidden rounded-[2rem] border border-white shadow-[inset_0_0_0_1px_rgba(255,255,255,0.8)] bg-gradient-to-br from-[#fff1eb] via-[#fffaf4] to-[#f6efff]">
-              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[1.8rem] bg-[#fdf7f4]">
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[1.7rem] bg-[#fdf7f4] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.55)]">
                 <img
-                  src={imgk6}
+                  src={imgk9}
                   alt="Through the Years"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover scale-[1.02] rounded-[1.1rem]"
                 />
                 <div className="absolute top-4 left-4 w-14 h-14 rounded-full bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.75),transparent_60%)] pointer-events-none" />
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.35),transparent_40%)] pointer-events-none" />

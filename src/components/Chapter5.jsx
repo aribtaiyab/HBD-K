@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import PremiumButton from "./PremiumButton";
 import { ArrowRight } from "lucide-react";
 import imgk2 from "./imgk2.jpeg";
-import imgk3 from "./imgk3.jpeg";
+import imgk8 from "./imgk8.jpeg";
 
 export default function Chapter5({ onNext }) {
   return (
@@ -40,11 +40,11 @@ export default function Chapter5({ onNext }) {
             <div className="absolute top-7 left-4 w-10 h-10 rounded-full bg-white/90 border border-rose-100 shadow-sm flex items-center justify-center text-amber-600 text-xs">
               ✨
             </div>
-            <div className="relative aspect-[4/3] overflow-hidden rounded-[1.4rem] border border-white/70 shadow-[0_12px_35px_-20px_rgba(0,0,0,0.2)]">
+            <div className="relative aspect-[3/4] overflow-hidden rounded-[1.1rem] border border-white/70 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.4),inset_0_6px_16px_rgba(255,255,255,0.28),0_8px_16px_-12px_rgba(0,0,0,0.16)]">
               <img
                 src={imgk2}
                 alt="Scrapbook memory"
-                className="w-full h-full object-cover scale-[1.02] transition duration-1000 ease-out"
+                className="w-full h-full object-contain object-center scale-[1.02] transition duration-1000 ease-out rounded-[1.1rem]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/15 via-transparent to-transparent" />
             </div>
@@ -83,11 +83,11 @@ export default function Chapter5({ onNext }) {
               <span className="block w-10 h-2 rounded-full bg-pink-200/90 shadow-sm" />
               <span className="block w-10 h-2 rounded-full bg-pink-200/90 shadow-sm" />
             </div>
-            <div className="relative aspect-[4/3] overflow-hidden rounded-[1.3rem] border border-white/70 shadow-[0_10px_30px_-22px_rgba(0,0,0,0.18)]">
+            <div className="relative aspect-[3/4] overflow-hidden rounded-[1.1rem] border border-white/70 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.4),inset_0_6px_16px_rgba(255,255,255,0.28),0_8px_16px_-12px_rgba(0,0,0,0.16)]">
               <img
-                src={imgk3}
+                src={imgk8}
                 alt="Scrapbook memory"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain object-center scale-[1.02] rounded-[1.1rem]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
             </div>
